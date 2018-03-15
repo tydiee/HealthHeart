@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Lr-VO-grS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Area Map-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController title="Area Map" id="BYZ-38-t0r" customClass="ViewController" customModule="HealthHearts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image001_1520903974292.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="k85-X6-j5C">
+                                <rect key="frame" x="67" y="370" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ssy-CM-dNv"/>
+                                    <constraint firstAttribute="height" constant="128" id="aJm-YG-QMe"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwZ-mF-7L3">
+                                <rect key="frame" x="67" y="345" width="240" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="1oP-9t-U3u"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="178" id="9PZ-B1-Ag4"/>
+                                    <constraint firstAttribute="width" constant="240" id="D6S-TN-W0i"/>
+                                    <constraint firstAttribute="height" constant="178" id="zP2-vf-noY"/>
+                                </constraints>
+                                <state key="normal" title="Google">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoogleMapButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3w-TL-Tl6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="058e18b0035cf96488c6acb9246122cd.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZB-0t-YrM">
+                                <rect key="frame" x="67" y="120" width="240" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7Si-px-fPS"/>
+                                    <constraint firstAttribute="height" constant="185" id="mNt-Xh-Nye"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYq-cV-pzD">
+                                <rect key="frame" x="0.0" y="568" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.56470588235294117" green="0.10980392156862745" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hYr-Jz-t0j"/>
+                                    <constraint firstAttribute="width" constant="375" id="rv7-KW-zfD"/>
+                                </constraints>
+                                <state key="normal">
+                                    <string key="title">Information on places to stay
+
+ </string>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TOA-TS-mfr" kind="show" id="Vhg-6w-Dov"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eng/Spa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnC-20-7pn">
+                                <rect key="frame" x="240" y="72" width="64" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPq-9c-m6n">
+                                <rect key="frame" x="312" y="67" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MwZ-mF-7L3" secondAttribute="trailing" constant="68" id="280-I8-lIx"/>
+                            <constraint firstItem="HYq-cV-pzD" firstAttribute="top" secondItem="XPq-9c-m6n" secondAttribute="bottom" constant="470" id="3iR-7M-DrU"/>
+                            <constraint firstItem="XPq-9c-m6n" firstAttribute="leading" secondItem="UnC-20-7pn" secondAttribute="trailing" constant="8" id="42w-hD-KeH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HYq-cV-pzD" secondAttribute="bottom" constant="59" id="4PK-Bx-NFe"/>
+                            <constraint firstItem="UnC-20-7pn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="4T2-e5-vwF"/>
+                            <constraint firstItem="HYq-cV-pzD" firstAttribute="top" secondItem="k85-X6-j5C" secondAttribute="bottom" constant="70" id="HOo-lS-Edp"/>
+                            <constraint firstItem="XPq-9c-m6n" firstAttribute="leading" secondItem="UnC-20-7pn" secondAttribute="trailing" constant="8" id="LeR-L8-nNS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k85-X6-j5C" secondAttribute="trailing" constant="68" id="Og8-Nq-UK1"/>
+                            <constraint firstItem="QZB-0t-YrM" firstAttribute="top" secondItem="UnC-20-7pn" secondAttribute="bottom" constant="13" id="PCv-Jf-gTt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XPq-9c-m6n" secondAttribute="trailing" constant="14" id="Smp-uM-vfU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QZB-0t-YrM" secondAttribute="trailing" constant="68" id="WCZ-sg-etr"/>
+                            <constraint firstItem="QZB-0t-YrM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="Wdc-BK-whz"/>
+                            <constraint firstItem="HYq-cV-pzD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i2R-oO-DMO"/>
+                            <constraint firstItem="MwZ-mF-7L3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="281" id="iop-og-ee6"/>
+                            <constraint firstItem="UnC-20-7pn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="240" id="kCp-U2-WFj"/>
+                            <constraint firstItem="XPq-9c-m6n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="qlP-7i-ijK"/>
+                            <constraint firstItem="k85-X6-j5C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="306" id="znY-jG-nrq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="837.60000000000002" y="814.54272863568224"/>
+        </scene>
+        <!--Places to Stay-->
+        <scene sceneID="Ske-7f-yvL">
+            <objects>
+                <viewController title="Places to Stay" id="TOA-TS-mfr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wp1-Dy-7xy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARO-1x-uu8">
+                                <rect key="frame" x="32" y="87" width="311" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="311" id="B2K-FS-Dmc"/>
+                                    <constraint firstAttribute="height" constant="213" id="D2m-ac-6tW"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="213" id="O9N-MK-7Ot"/>
+                                    <constraint firstAttribute="width" constant="311" id="zZf-eG-LNL"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Inland Empire Ronald McDonald House ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24.800000000000001" name="Arial-BoldMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12.800000000000001" name="Arial-BoldMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">11365 Anderson Street
+Loma Linda, CA 92354
+(909) 747-1200
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="http://rmhcsc.org/inlandempire">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.066666666666666666" green="0.33333333333333331" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <url key="NSLink" string="http://rmhcsc.org/inlandempire"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.066666666666666666" green="0.33333333333333331" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12.800000000000001" name="ArialMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZw-fF-veB">
+                                <rect key="frame" x="32" y="301" width="311" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="4Nj-NS-bAq"/>
+                                    <constraint firstAttribute="height" constant="146" id="jHs-v8-95c"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Loma Linda Inn ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Arial-BoldMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="(Office Hours are 5 am – midnight)">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.13333" green="0.13333" blue="0.13333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333" green="0.13333" blue="0.13333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12.800000000000001" name="ArialMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="24532 University Avenue Loma Linda, CA 92354 (909) 583-2500 ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="https://lomalindainn.com/">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.066666666666666666" green="0.33333333333333331" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <url key="NSLink" string="https://lomalindainn.com/"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.066666666666666666" green="0.33333333333333331" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12.800000000000001" name="ArialMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12.800000000000001" name="ArialMT"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OE5-Jw-1rz" firstAttribute="trailing" secondItem="ARO-1x-uu8" secondAttribute="trailing" constant="32" id="6bl-0Y-MQR"/>
+                            <constraint firstItem="OE5-Jw-1rz" firstAttribute="trailing" secondItem="sZw-fF-veB" secondAttribute="trailing" constant="32" id="OOR-g5-1AV"/>
+                            <constraint firstItem="ARO-1x-uu8" firstAttribute="top" secondItem="OE5-Jw-1rz" secondAttribute="top" constant="23" id="adB-Ks-yna"/>
+                            <constraint firstItem="sZw-fF-veB" firstAttribute="top" secondItem="ARO-1x-uu8" secondAttribute="bottom" constant="1" id="jS3-Tm-I74"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OE5-Jw-1rz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hN2-2U-BZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620" y="814.54272863568224"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zSF-4B-8M7">
+            <objects>
+                <navigationController id="8Lr-VO-grS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NwV-i2-1PH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ptd-hg-FCQ" kind="relationship" relationship="rootViewController" id="fw2-8h-zIC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8UP-fX-JNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="-615"/>
+        </scene>
+        <!--Helpline-->
+        <scene sceneID="LMv-hw-Zbx">
+            <objects>
+                <viewController id="ptd-hg-FCQ" customClass="ViewController" customModule="healthyhearts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FmU-ty-gfY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="391-Q8-H8B">
+                                <rect key="frame" x="123" y="110" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ALF-OZ-ycX"/>
+                                    <constraint firstAttribute="width" constant="129" id="ZNb-7Y-AWI"/>
+                                </constraints>
+                                <state key="normal" title="Web Links">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JNg-At-lB2" kind="show" id="ly1-HU-k55"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmT-Bd-1P0">
+                                <rect key="frame" x="123" y="203" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tbi-CG-XJF"/>
+                                    <constraint firstAttribute="width" constant="129" id="Uu8-30-Q2q"/>
+                                </constraints>
+                                <state key="normal" title="Area Map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="n7q-Zr-YuL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNd-Nl-2pO">
+                                <rect key="frame" x="123" y="249" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9RF-QF-Dbm"/>
+                                    <constraint firstAttribute="width" constant="129" id="Pyy-bw-BfG"/>
+                                </constraints>
+                                <state key="normal" title="Hospital Showers">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="M6M-Io-aJX" kind="show" id="yiT-M2-bxY">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skf-rg-Vpn">
+                                <rect key="frame" x="123" y="297" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G9G-hI-Cbd"/>
+                                    <constraint firstAttribute="width" constant="129" id="fuO-he-0qW"/>
+                                </constraints>
+                                <state key="normal" title="Cafeteria Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u61-EZ-0ZY" kind="show" id="Jc8-rk-fAs"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bzM-ob-vJ0">
+                                <rect key="frame" x="312" y="68" width="49" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eng/Spa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utv-td-wMs">
+                                <rect key="frame" x="240" y="73" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S42-L3-eoI">
+                                <rect key="frame" x="123" y="156" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CdT-i2-zYk"/>
+                                    <constraint firstAttribute="width" constant="129" id="OJJ-5i-ee6"/>
+                                </constraints>
+                                <state key="normal" title="Follow Ups">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dje-8H-GCg" kind="show" id="OA3-ND-Mgz">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lf4-Yr-Lck" firstAttribute="trailing" secondItem="bzM-ob-vJ0" secondAttribute="trailing" constant="16" id="4Oh-JK-sET"/>
+                            <constraint firstItem="S42-L3-eoI" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="92" id="6r3-Ey-Jtf"/>
+                            <constraint firstItem="391-Q8-H8B" firstAttribute="centerX" secondItem="Lf4-Yr-Lck" secondAttribute="centerX" id="7OH-7s-RVq"/>
+                            <constraint firstItem="gmT-Bd-1P0" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="139" id="AeI-Sm-CYU"/>
+                            <constraint firstItem="bzM-ob-vJ0" firstAttribute="leading" secondItem="utv-td-wMs" secondAttribute="trailing" constant="8" id="Ani-Nh-Yjg"/>
+                            <constraint firstItem="bzM-ob-vJ0" firstAttribute="leading" secondItem="utv-td-wMs" secondAttribute="trailing" constant="8" id="F5Y-Zq-IU3"/>
+                            <constraint firstItem="gmT-Bd-1P0" firstAttribute="centerX" secondItem="Lf4-Yr-Lck" secondAttribute="centerX" id="KNt-X6-rmt"/>
+                            <constraint firstItem="utv-td-wMs" firstAttribute="leading" secondItem="Lf4-Yr-Lck" secondAttribute="leading" constant="240" id="KR4-tA-FWt"/>
+                            <constraint firstItem="bzM-ob-vJ0" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="4" id="Nq1-Rg-uGh"/>
+                            <constraint firstItem="bzM-ob-vJ0" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="4" id="ck9-7u-AqP"/>
+                            <constraint firstItem="Lf4-Yr-Lck" firstAttribute="trailing" secondItem="utv-td-wMs" secondAttribute="trailing" constant="71" id="jZT-4j-kJV"/>
+                            <constraint firstItem="jNd-Nl-2pO" firstAttribute="centerX" secondItem="Lf4-Yr-Lck" secondAttribute="centerX" id="q8g-2Q-OwI"/>
+                            <constraint firstItem="jNd-Nl-2pO" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="185" id="ruT-Xs-Vn3"/>
+                            <constraint firstItem="Skf-rg-Vpn" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="233" id="sWx-ux-k2a"/>
+                            <constraint firstItem="Lf4-Yr-Lck" firstAttribute="bottom" secondItem="bzM-ob-vJ0" secondAttribute="bottom" constant="568" id="tQ5-Pc-dUw"/>
+                            <constraint firstItem="utv-td-wMs" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="9" id="uDx-0d-f5j"/>
+                            <constraint firstItem="391-Q8-H8B" firstAttribute="top" secondItem="utv-td-wMs" secondAttribute="bottom" constant="16" id="uXk-5T-rnt"/>
+                            <constraint firstItem="391-Q8-H8B" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="46" id="v7L-7O-Rmm"/>
+                            <constraint firstItem="Skf-rg-Vpn" firstAttribute="centerX" secondItem="Lf4-Yr-Lck" secondAttribute="centerX" id="x0a-3R-OsD"/>
+                            <constraint firstItem="S42-L3-eoI" firstAttribute="centerX" secondItem="Lf4-Yr-Lck" secondAttribute="centerX" id="yI2-n0-pIj"/>
+                            <constraint firstItem="Lf4-Yr-Lck" firstAttribute="trailing" secondItem="bzM-ob-vJ0" secondAttribute="trailing" constant="16" id="zRb-o1-Dha"/>
+                            <constraint firstItem="utv-td-wMs" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="9" id="zVY-Ur-eH5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lf4-Yr-Lck"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Helpline" id="FSH-e0-5TU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kr1-db-aEl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Follow Ups-->
+        <scene sceneID="33B-2L-mKd">
+            <objects>
+                <viewController title="Follow Ups" id="dje-8H-GCg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F7i-7L-Ur4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="YSV-2z-GIj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qe-Ca-94r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="815"/>
+        </scene>
+        <!--Hospital Showers-->
+        <scene sceneID="P91-Uu-gLC">
+            <objects>
+                <viewController title="Hospital Showers" id="M6M-Io-aJX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rl5-bB-52g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hospital Showers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD6-wX-VkK">
+                                <rect key="frame" x="121" y="36" width="133" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eng/Spa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02T-nR-XJ3">
+                                <rect key="frame" x="238" y="88" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5dH-aW-e09">
+                                <rect key="frame" x="310" y="83" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mA0-QA-Iey">
+                                <rect key="frame" x="36" y="117" width="302" height="304.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="302" id="6au-fg-XDW"/>
+                                </constraints>
+                                <mutableString key="text">Showers are available from 5:30 A.M to 7 P.M. for 20-25 minute time slots.
+ To get added to the shower schedule check in with the lobby receptionist at the welcome desk.    The receptionist can also be reached at Ext 51414. 
+Caregivers will need to bring an ID or driver’s license.   Towels and some toiletries are provided.</mutableString>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="02T-nR-XJ3" firstAttribute="top" secondItem="384-5V-Dai" secondAttribute="top" constant="24" id="3Wb-cB-yPX"/>
+                            <constraint firstItem="384-5V-Dai" firstAttribute="trailing" secondItem="mA0-QA-Iey" secondAttribute="trailing" constant="37" id="G7p-n3-cQe"/>
+                            <constraint firstItem="mA0-QA-Iey" firstAttribute="top" secondItem="384-5V-Dai" secondAttribute="top" constant="53" id="H43-mm-rWy"/>
+                            <constraint firstItem="384-5V-Dai" firstAttribute="trailing" secondItem="02T-nR-XJ3" secondAttribute="trailing" constant="73" id="RJd-AB-7XN"/>
+                            <constraint firstItem="5dH-aW-e09" firstAttribute="top" secondItem="384-5V-Dai" secondAttribute="top" constant="19" id="fm1-n5-lJr"/>
+                            <constraint firstItem="384-5V-Dai" firstAttribute="trailing" secondItem="5dH-aW-e09" secondAttribute="trailing" constant="16" id="i55-VP-pAA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="384-5V-Dai"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETl-HB-om4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639.20000000000005" y="116.49175412293854"/>
+        </scene>
+        <!--Cafateria Menu-->
+        <scene sceneID="0Zc-zM-xX6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRg-O9-pMI" sceneMemberID="firstResponder"/>
+                <viewController title="Cafateria Menu" id="u61-EZ-0ZY" customClass="ViewController" customModule="HealthHearts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3yB-il-cXz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB6-KW-Cko">
+                                <rect key="frame" x="95" y="128" width="185" height="36"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="D6n-UE-YPX"/>
+                                    <constraint firstAttribute="height" constant="36" id="Hpt-hb-1wb"/>
+                                </constraints>
+                                <state key="normal" title="University Hospital Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="UniversityHospitalButtonPressed:" destination="u61-EZ-0ZY" eventType="touchUpInside" id="l2f-e6-7cG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVz-sc-AP4">
+                                <rect key="frame" x="95" y="189" width="185" height="36"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="OEQ-Q2-CnA"/>
+                                    <constraint firstAttribute="width" constant="185" id="fse-l4-Itx"/>
+                                </constraints>
+                                <state key="normal" title="Children's Hospital Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ChildrensHospitalButtonPressed:" destination="u61-EZ-0ZY" eventType="touchUpInside" id="7Af-Oi-VKy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eng/Spa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zy-pE-x09">
+                                <rect key="frame" x="240" y="87" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="guQ-Nu-FbQ">
+                                <rect key="frame" x="312" y="82" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iDb-ds-P8q" firstAttribute="trailing" secondItem="DVz-sc-AP4" secondAttribute="trailing" constant="95" id="9b5-mT-2ai"/>
+                            <constraint firstItem="guQ-Nu-FbQ" firstAttribute="leading" secondItem="6Zy-pE-x09" secondAttribute="trailing" constant="8" id="FNj-aZ-XS0"/>
+                            <constraint firstItem="DVz-sc-AP4" firstAttribute="top" secondItem="iDb-ds-P8q" secondAttribute="top" constant="125" id="IWp-bX-wAx"/>
+                            <constraint firstItem="iDb-ds-P8q" firstAttribute="trailing" secondItem="rB6-KW-Cko" secondAttribute="trailing" constant="95" id="IuN-AJ-QtD"/>
+                            <constraint firstItem="iDb-ds-P8q" firstAttribute="trailing" secondItem="guQ-Nu-FbQ" secondAttribute="trailing" constant="14" id="XUE-Cq-GGO"/>
+                            <constraint firstItem="6Zy-pE-x09" firstAttribute="leading" secondItem="iDb-ds-P8q" secondAttribute="leading" constant="240" id="Zq8-pn-dBb"/>
+                            <constraint firstItem="guQ-Nu-FbQ" firstAttribute="leading" secondItem="6Zy-pE-x09" secondAttribute="trailing" constant="8" id="dpR-aO-mE8"/>
+                            <constraint firstItem="guQ-Nu-FbQ" firstAttribute="top" secondItem="iDb-ds-P8q" secondAttribute="top" constant="18" id="fa0-uQ-0yD"/>
+                            <constraint firstItem="iDb-ds-P8q" firstAttribute="bottom" secondItem="guQ-Nu-FbQ" secondAttribute="bottom" constant="554" id="hxl-Fg-mss"/>
+                            <constraint firstItem="6Zy-pE-x09" firstAttribute="top" secondItem="iDb-ds-P8q" secondAttribute="top" constant="23" id="pcv-82-OU1"/>
+                            <constraint firstItem="rB6-KW-Cko" firstAttribute="top" secondItem="iDb-ds-P8q" secondAttribute="top" constant="64" id="pnE-f5-ReC"/>
+                            <constraint firstItem="rB6-KW-Cko" firstAttribute="top" secondItem="6Zy-pE-x09" secondAttribute="bottom" constant="20" id="sVe-Aa-gge"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iDb-ds-P8q"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="838" y="131"/>
+        </scene>
+        <!--Cafateria Menu-->
+        <scene sceneID="tzZ-lf-8ek">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LaI-vi-gXd" sceneMemberID="firstResponder"/>
+                <viewController title="Cafateria Menu" id="JNg-At-lB2" customClass="ViewController" customModule="HealthHearts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qOQ-q3-Zye">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYs-bt-jQ8">
+                                <rect key="frame" x="0.0" y="128" width="375" height="36"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="EwR-ux-IyU"/>
+                                    <constraint firstAttribute="height" constant="36" id="RKB-qE-8y0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="Tns-2V-Rsi"/>
+                                    <constraint firstAttribute="width" constant="375" id="ytl-MC-uRl"/>
+                                </constraints>
+                                <state key="normal" title="American Heart Association">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AmericanHeartAssociationButtonPressed:" destination="JNg-At-lB2" eventType="touchUpInside" id="oKa-Xy-zdV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shy-pU-SS0">
+                                <rect key="frame" x="0.0" y="196" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DAN-Id-ob2"/>
+                                    <constraint firstAttribute="width" constant="375" id="OP5-xk-R0M"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="csC-ed-Lxq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="g6w-wT-4UW"/>
+                                </constraints>
+                                <state key="normal" title="Loma Linda University Medical Center">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="LomaLindaUniversityMedicalCenterButtonPressed:" destination="JNg-At-lB2" eventType="touchUpInside" id="TX9-qN-OzS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eng/Spa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yaw-LT-rvi">
+                                <rect key="frame" x="238" y="74" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8c7-9I-I7W">
+                                <rect key="frame" x="310" y="69" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8c7-9I-I7W" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="5" id="4PA-RP-VSX"/>
+                            <constraint firstItem="oYs-bt-jQ8" firstAttribute="trailing" secondItem="aIm-mI-kr7" secondAttribute="trailing" id="7fJ-AW-WdW"/>
+                            <constraint firstItem="oYs-bt-jQ8" firstAttribute="leading" secondItem="aIm-mI-kr7" secondAttribute="leading" id="9yo-KA-hPy"/>
+                            <constraint firstItem="shy-pU-SS0" firstAttribute="trailing" secondItem="aIm-mI-kr7" secondAttribute="trailing" id="Qt5-2R-Odb"/>
+                            <constraint firstItem="shy-pU-SS0" firstAttribute="top" secondItem="oYs-bt-jQ8" secondAttribute="bottom" constant="32" id="o89-MI-Nj1"/>
+                            <constraint firstItem="Yaw-LT-rvi" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="10" id="oKh-e0-eq9"/>
+                            <constraint firstItem="aIm-mI-kr7" firstAttribute="trailing" secondItem="Yaw-LT-rvi" secondAttribute="trailing" constant="73" id="rMS-e2-ze6"/>
+                            <constraint firstItem="aIm-mI-kr7" firstAttribute="trailing" secondItem="8c7-9I-I7W" secondAttribute="trailing" constant="16" id="vV6-Po-RYD"/>
+                            <constraint firstItem="oYs-bt-jQ8" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="64" id="xcy-ek-61F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aIm-mI-kr7"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="814.54272863568224"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="058e18b0035cf96488c6acb9246122cd.png" width="799" height="618"/>
+        <image name="image001_1520903974292.jpg" width="713" height="510"/>
+    </resources>
+</document>
