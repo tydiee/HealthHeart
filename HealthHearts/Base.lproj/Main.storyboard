@@ -13,7 +13,6 @@
         <!--Area Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController title="Area Map" id="BYZ-38-t0r" customClass="ViewController" customModule="HealthHearts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -41,19 +40,12 @@
                                     <action selector="GoogleMapButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n3w-TL-Tl6"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="058e18b0035cf96488c6acb9246122cd.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZB-0t-YrM">
-                                <rect key="frame" x="67" y="120" width="240" height="185"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="7Si-px-fPS"/>
-                                    <constraint firstAttribute="height" constant="185" id="mNt-Xh-Nye"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYq-cV-pzD">
-                                <rect key="frame" x="0.0" y="568" width="375" height="40"/>
+                                <rect key="frame" x="67" y="578" width="237" height="30"/>
                                 <color key="backgroundColor" red="0.56470588235294117" green="0.10980392156862745" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="hYr-Jz-t0j"/>
-                                    <constraint firstAttribute="width" constant="375" id="rv7-KW-zfD"/>
+                                    <constraint firstAttribute="height" constant="30" id="8WY-a1-quL"/>
+                                    <constraint firstAttribute="width" constant="237" id="UFu-mS-5xE"/>
                                 </constraints>
                                 <state key="normal">
                                     <string key="title">Information on places to stay
@@ -74,22 +66,27 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPq-9c-m6n">
                                 <rect key="frame" x="312" y="67" width="51" height="31"/>
                             </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="058e18b0035cf96488c6acb9246122cd.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZB-0t-YrM">
+                                <rect key="frame" x="67" y="115" width="240" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7Si-px-fPS"/>
+                                    <constraint firstAttribute="height" constant="185" id="mNt-Xh-Nye"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MwZ-mF-7L3" secondAttribute="trailing" constant="68" id="280-I8-lIx"/>
-                            <constraint firstItem="HYq-cV-pzD" firstAttribute="top" secondItem="XPq-9c-m6n" secondAttribute="bottom" constant="470" id="3iR-7M-DrU"/>
                             <constraint firstItem="XPq-9c-m6n" firstAttribute="leading" secondItem="UnC-20-7pn" secondAttribute="trailing" constant="8" id="42w-hD-KeH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HYq-cV-pzD" secondAttribute="bottom" constant="59" id="4PK-Bx-NFe"/>
                             <constraint firstItem="UnC-20-7pn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="4T2-e5-vwF"/>
-                            <constraint firstItem="HYq-cV-pzD" firstAttribute="top" secondItem="k85-X6-j5C" secondAttribute="bottom" constant="70" id="HOo-lS-Edp"/>
                             <constraint firstItem="XPq-9c-m6n" firstAttribute="leading" secondItem="UnC-20-7pn" secondAttribute="trailing" constant="8" id="LeR-L8-nNS"/>
+                            <constraint firstItem="HYq-cV-pzD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="514" id="M1N-ve-CgT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k85-X6-j5C" secondAttribute="trailing" constant="68" id="Og8-Nq-UK1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HYq-cV-pzD" secondAttribute="trailing" constant="71" id="Ogi-NQ-oVC"/>
                             <constraint firstItem="QZB-0t-YrM" firstAttribute="top" secondItem="UnC-20-7pn" secondAttribute="bottom" constant="13" id="PCv-Jf-gTt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XPq-9c-m6n" secondAttribute="trailing" constant="14" id="Smp-uM-vfU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QZB-0t-YrM" secondAttribute="trailing" constant="68" id="WCZ-sg-etr"/>
                             <constraint firstItem="QZB-0t-YrM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="Wdc-BK-whz"/>
-                            <constraint firstItem="HYq-cV-pzD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i2R-oO-DMO"/>
                             <constraint firstItem="MwZ-mF-7L3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="281" id="iop-og-ee6"/>
                             <constraint firstItem="UnC-20-7pn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="240" id="kCp-U2-WFj"/>
                             <constraint firstItem="XPq-9c-m6n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="qlP-7i-ijK"/>
@@ -98,6 +95,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="837.60000000000002" y="814.54272863568224"/>
         </scene>
@@ -337,7 +335,7 @@ Cg
         <!--Helpline-->
         <scene sceneID="LMv-hw-Zbx">
             <objects>
-                <viewController id="ptd-hg-FCQ" customClass="ViewController" customModule="healthyhearts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ptd-hg-FCQ" customClass="ViewController" customModule="HealthHearts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FmU-ty-gfY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,9 +501,9 @@ Cg
                                 <constraints>
                                     <constraint firstAttribute="width" constant="302" id="6au-fg-XDW"/>
                                 </constraints>
-                                <mutableString key="text">Showers are available from 5:30 A.M to 7 P.M. for 20-25 minute time slots.
+                                <string key="text">Showers are available from 5:30 A.M to 7 P.M. for 20-25 minute time slots.
  To get added to the shower schedule check in with the lobby receptionist at the welcome desk.    The receptionist can also be reached at Ext 51414. 
-Caregivers will need to bring an ID or driver’s license.   Towels and some toiletries are provided.</mutableString>
+Caregivers will need to bring an ID or driver’s license.   Towels and some toiletries are provided.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -530,26 +528,11 @@ Caregivers will need to bring an ID or driver’s license.   Towels and some
         <!--Cafateria Menu-->
         <scene sceneID="0Zc-zM-xX6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HRg-O9-pMI" sceneMemberID="firstResponder"/>
                 <viewController title="Cafateria Menu" id="u61-EZ-0ZY" customClass="ViewController" customModule="HealthHearts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3yB-il-cXz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB6-KW-Cko">
-                                <rect key="frame" x="95" y="128" width="185" height="36"/>
-                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="185" id="D6n-UE-YPX"/>
-                                    <constraint firstAttribute="height" constant="36" id="Hpt-hb-1wb"/>
-                                </constraints>
-                                <state key="normal" title="University Hospital Menu">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="UniversityHospitalButtonPressed:" destination="u61-EZ-0ZY" eventType="touchUpInside" id="l2f-e6-7cG"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVz-sc-AP4">
                                 <rect key="frame" x="95" y="189" width="185" height="36"/>
                                 <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -573,6 +556,20 @@ Caregivers will need to bring an ID or driver’s license.   Towels and some
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="guQ-Nu-FbQ">
                                 <rect key="frame" x="312" y="82" width="51" height="31"/>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rB6-KW-Cko">
+                                <rect key="frame" x="95" y="128" width="185" height="36"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="D6n-UE-YPX"/>
+                                    <constraint firstAttribute="height" constant="36" id="Hpt-hb-1wb"/>
+                                </constraints>
+                                <state key="normal" title="University Hospital Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="UniversityHospitalButtonPressed:" destination="u61-EZ-0ZY" eventType="touchUpInside" id="l2f-e6-7cG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -592,43 +589,26 @@ Caregivers will need to bring an ID or driver’s license.   Towels and some
                         <viewLayoutGuide key="safeArea" id="iDb-ds-P8q"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRg-O9-pMI" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="838" y="131"/>
         </scene>
-        <!--Cafateria Menu-->
+        <!--Web Links-->
         <scene sceneID="tzZ-lf-8ek">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LaI-vi-gXd" sceneMemberID="firstResponder"/>
-                <viewController title="Cafateria Menu" id="JNg-At-lB2" customClass="ViewController" customModule="HealthHearts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Web Links" id="JNg-At-lB2" customClass="ViewController" customModule="HealthHearts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qOQ-q3-Zye">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYs-bt-jQ8">
-                                <rect key="frame" x="0.0" y="128" width="375" height="36"/>
-                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="EwR-ux-IyU"/>
-                                    <constraint firstAttribute="height" constant="36" id="RKB-qE-8y0"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="Tns-2V-Rsi"/>
-                                    <constraint firstAttribute="width" constant="375" id="ytl-MC-uRl"/>
-                                </constraints>
-                                <state key="normal" title="American Heart Association">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="AmericanHeartAssociationButtonPressed:" destination="JNg-At-lB2" eventType="touchUpInside" id="oKa-Xy-zdV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shy-pU-SS0">
-                                <rect key="frame" x="0.0" y="196" width="375" height="30"/>
+                                <rect key="frame" x="86" y="190" width="203" height="30"/>
                                 <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="DAN-Id-ob2"/>
-                                    <constraint firstAttribute="width" constant="375" id="OP5-xk-R0M"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="csC-ed-Lxq"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="g6w-wT-4UW"/>
+                                    <constraint firstAttribute="height" constant="30" id="aNv-23-qx1"/>
+                                    <constraint firstAttribute="width" constant="203" id="gP5-vt-Zvp"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Loma Linda University Medical Center">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -645,22 +625,37 @@ Caregivers will need to bring an ID or driver’s license.   Towels and some
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8c7-9I-I7W">
                                 <rect key="frame" x="310" y="69" width="51" height="31"/>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYs-bt-jQ8">
+                                <rect key="frame" x="86" y="133" width="203" height="30"/>
+                                <color key="backgroundColor" red="0.56470588239999997" green="0.10980392160000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="3pE-hf-8c2"/>
+                                    <constraint firstAttribute="height" constant="30" id="HeO-es-szD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="American Heart Association">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AmericanHeartAssociationButtonPressed:" destination="JNg-At-lB2" eventType="touchUpInside" id="oKa-Xy-zdV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="oYs-bt-jQ8" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="69" id="2U0-Es-Nds"/>
                             <constraint firstItem="8c7-9I-I7W" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="5" id="4PA-RP-VSX"/>
-                            <constraint firstItem="oYs-bt-jQ8" firstAttribute="trailing" secondItem="aIm-mI-kr7" secondAttribute="trailing" id="7fJ-AW-WdW"/>
-                            <constraint firstItem="oYs-bt-jQ8" firstAttribute="leading" secondItem="aIm-mI-kr7" secondAttribute="leading" id="9yo-KA-hPy"/>
-                            <constraint firstItem="shy-pU-SS0" firstAttribute="trailing" secondItem="aIm-mI-kr7" secondAttribute="trailing" id="Qt5-2R-Odb"/>
-                            <constraint firstItem="shy-pU-SS0" firstAttribute="top" secondItem="oYs-bt-jQ8" secondAttribute="bottom" constant="32" id="o89-MI-Nj1"/>
+                            <constraint firstItem="aIm-mI-kr7" firstAttribute="trailing" secondItem="shy-pU-SS0" secondAttribute="trailing" constant="86" id="dYA-yd-vou"/>
+                            <constraint firstItem="shy-pU-SS0" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="126" id="mHN-BS-cDY"/>
                             <constraint firstItem="Yaw-LT-rvi" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="10" id="oKh-e0-eq9"/>
+                            <constraint firstItem="aIm-mI-kr7" firstAttribute="trailing" secondItem="oYs-bt-jQ8" secondAttribute="trailing" constant="86" id="qts-5P-JVY"/>
                             <constraint firstItem="aIm-mI-kr7" firstAttribute="trailing" secondItem="Yaw-LT-rvi" secondAttribute="trailing" constant="73" id="rMS-e2-ze6"/>
                             <constraint firstItem="aIm-mI-kr7" firstAttribute="trailing" secondItem="8c7-9I-I7W" secondAttribute="trailing" constant="16" id="vV6-Po-RYD"/>
-                            <constraint firstItem="oYs-bt-jQ8" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="64" id="xcy-ek-61F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aIm-mI-kr7"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LaI-vi-gXd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="814.54272863568224"/>
         </scene>
