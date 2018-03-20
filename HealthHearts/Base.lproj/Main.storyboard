@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Area Map-->
         <scene sceneID="tne-QT-ifu">
@@ -74,7 +79,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MwZ-mF-7L3" secondAttribute="trailing" constant="68" id="280-I8-lIx"/>
                             <constraint firstItem="XPq-9c-m6n" firstAttribute="leading" secondItem="UnC-20-7pn" secondAttribute="trailing" constant="8" id="42w-hD-KeH"/>
@@ -107,207 +112,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARO-1x-uu8">
-                                <rect key="frame" x="32" y="87" width="311" height="213"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZw-fF-veB">
+                                <rect key="frame" x="32" y="375" width="311" height="146"/>
+                                <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="4Nj-NS-bAq"/>
+                                    <constraint firstAttribute="height" constant="146" id="jHs-v8-95c"/>
+                                </constraints>
+                                <string key="text">Loma Linda Inn (Office Hours are 5 am – midnight) 24532 University Avenue Loma Linda, CA 92354 (909) 583-2500 https://lomalindainn.com/
+
+</string>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARO-1x-uu8">
+                                <rect key="frame" x="32" y="113" width="311" height="213"/>
+                                <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="311" id="B2K-FS-Dmc"/>
                                     <constraint firstAttribute="height" constant="213" id="D2m-ac-6tW"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="213" id="O9N-MK-7Ot"/>
                                     <constraint firstAttribute="width" constant="311" id="zZf-eG-LNL"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Inland Empire Ronald McDonald House ">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24.800000000000001" name="Arial-BoldMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="12.800000000000001" name="Arial-BoldMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">11365 Anderson Street
+                                <string key="text">Inland Empire Ronald McDonald House  11365 Anderson Street
 Loma Linda, CA 92354
 (909) 747-1200
+http://rmhcsc.org/inlandempire
 </string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="http://rmhcsc.org/inlandempire">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.066666666666666666" green="0.33333333333333331" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <url key="NSLink" string="http://rmhcsc.org/inlandempire"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.066666666666666666" green="0.33333333333333331" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="12.800000000000001" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZw-fF-veB">
-                                <rect key="frame" x="32" y="301" width="311" height="146"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="311" id="4Nj-NS-bAq"/>
-                                    <constraint firstAttribute="height" constant="146" id="jHs-v8-95c"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Loma Linda Inn ">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="Arial-BoldMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="(Office Hours are 5 am – midnight)">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.13333" green="0.13333" blue="0.13333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333" green="0.13333" blue="0.13333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="12.800000000000001" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="24532 University Avenue Loma Linda, CA 92354 (909) 583-2500 ">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="https://lomalindainn.com/">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.066666666666666666" green="0.33333333333333331" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="15.800000000000001" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <url key="NSLink" string="https://lomalindainn.com/"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.066666666666666666" green="0.33333333333333331" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="12.800000000000001" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
-                                            <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="12.800000000000001" name="ArialMT"/>
-                                            <real key="NSKern" value="0.0"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="15" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <color key="NSStrokeColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <real key="NSStrokeWidth" value="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="21.799999237060547"/>
+                                <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OE5-Jw-1rz" firstAttribute="trailing" secondItem="ARO-1x-uu8" secondAttribute="trailing" constant="32" id="6bl-0Y-MQR"/>
-                            <constraint firstItem="OE5-Jw-1rz" firstAttribute="trailing" secondItem="sZw-fF-veB" secondAttribute="trailing" constant="32" id="OOR-g5-1AV"/>
-                            <constraint firstItem="ARO-1x-uu8" firstAttribute="top" secondItem="OE5-Jw-1rz" secondAttribute="top" constant="23" id="adB-Ks-yna"/>
-                            <constraint firstItem="sZw-fF-veB" firstAttribute="top" secondItem="ARO-1x-uu8" secondAttribute="bottom" constant="1" id="jS3-Tm-I74"/>
+                            <constraint firstItem="sZw-fF-veB" firstAttribute="top" secondItem="OE5-Jw-1rz" secondAttribute="top" constant="311" id="GG6-F8-cYV"/>
+                            <constraint firstItem="ARO-1x-uu8" firstAttribute="top" secondItem="OE5-Jw-1rz" secondAttribute="top" constant="49" id="jcx-g4-4qO"/>
+                            <constraint firstItem="OE5-Jw-1rz" firstAttribute="trailing" secondItem="ARO-1x-uu8" secondAttribute="trailing" constant="32" id="lmp-Zh-29f"/>
+                            <constraint firstItem="OE5-Jw-1rz" firstAttribute="trailing" secondItem="sZw-fF-veB" secondAttribute="trailing" constant="32" id="mIH-7k-AB6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OE5-Jw-1rz"/>
                     </view>
@@ -424,7 +267,7 @@ Cg
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lf4-Yr-Lck" firstAttribute="trailing" secondItem="bzM-ob-vJ0" secondAttribute="trailing" constant="16" id="4Oh-JK-sET"/>
                             <constraint firstItem="S42-L3-eoI" firstAttribute="top" secondItem="Lf4-Yr-Lck" secondAttribute="top" constant="92" id="6r3-Ey-Jtf"/>
@@ -464,7 +307,7 @@ Cg
                     <view key="view" contentMode="scaleToFill" id="F7i-7L-Ur4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="YSV-2z-GIj"/>
                     </view>
                 </viewController>
@@ -509,7 +352,7 @@ Caregivers will need to bring an ID or driver’s license.   Towels and some
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="02T-nR-XJ3" firstAttribute="top" secondItem="384-5V-Dai" secondAttribute="top" constant="24" id="3Wb-cB-yPX"/>
                             <constraint firstItem="384-5V-Dai" firstAttribute="trailing" secondItem="mA0-QA-Iey" secondAttribute="trailing" constant="37" id="G7p-n3-cQe"/>
@@ -571,7 +414,7 @@ Caregivers will need to bring an ID or driver’s license.   Towels and some
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="iDb-ds-P8q" firstAttribute="trailing" secondItem="DVz-sc-AP4" secondAttribute="trailing" constant="95" id="9b5-mT-2ai"/>
                             <constraint firstItem="guQ-Nu-FbQ" firstAttribute="leading" secondItem="6Zy-pE-x09" secondAttribute="trailing" constant="8" id="FNj-aZ-XS0"/>
@@ -641,7 +484,7 @@ Caregivers will need to bring an ID or driver’s license.   Towels and some
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oYs-bt-jQ8" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="69" id="2U0-Es-Nds"/>
                             <constraint firstItem="8c7-9I-I7W" firstAttribute="top" secondItem="aIm-mI-kr7" secondAttribute="top" constant="5" id="4PA-RP-VSX"/>
